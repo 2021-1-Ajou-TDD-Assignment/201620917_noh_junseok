@@ -25,7 +25,7 @@ public class Game {
 				score += 10 + rolls[frameIndex+2];
 				frameIndex += 2;
 			}else {
-				score += rolls[frameIndex] + rolls[frameIndex+1];
+				score += sumOfBallsInFrame(frameIndex);
 				frameIndex += 2;
 			}
 		}
